@@ -1060,7 +1060,7 @@ this.setVisible(true);
 			        IncomeDetailsTextArea.append("Income Type: " + intype+ "\n");
 			        IncomeDetailsTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        IncomeDetailsTextArea.append("-------------------------------------------------\n");
+			        IncomeDetailsTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 1) {	
@@ -1072,7 +1072,7 @@ this.setVisible(true);
 			        IncomeDetailsTextArea.append("Income Type: " + intype+ "\n");
 			        IncomeDetailsTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        IncomeDetailsTextArea.append("-------------------------------------------------\n");
+			        IncomeDetailsTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 2) {	
@@ -1084,7 +1084,7 @@ this.setVisible(true);
 			        IncomeDetailsTextArea.append("Income Type: " + intype+ "\n");
 			        IncomeDetailsTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        IncomeDetailsTextArea.append("-------------------------------------------------\n");
+			        IncomeDetailsTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 3) {	
@@ -1096,7 +1096,7 @@ this.setVisible(true);
 			        IncomeDetailsTextArea.append("Income Type: " + intype+ "\n");
 			        IncomeDetailsTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        IncomeDetailsTextArea.append("-------------------------------------------------\n");
+			        IncomeDetailsTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 		}
@@ -1135,7 +1135,7 @@ this.setVisible(true);
 			        detailedSummaryTextArea.append("Income Type: " + intype+ "\n");
 			        detailedSummaryTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        detailedSummaryTextArea.append("-------------------------------------------------\n");
+			        detailedSummaryTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 1) {	
@@ -1147,7 +1147,7 @@ this.setVisible(true);
 			        detailedSummaryTextArea.append("Income Type: " + intype+ "\n");
 			        detailedSummaryTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        detailedSummaryTextArea.append("-------------------------------------------------\n");
+			        detailedSummaryTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 2) {	
@@ -1159,7 +1159,7 @@ this.setVisible(true);
 			        detailedSummaryTextArea.append("Income Type: " + intype+ "\n");
 			        detailedSummaryTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        detailedSummaryTextArea.append("-------------------------------------------------\n");
+			        detailedSummaryTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 			    else if (typeSorter.getSelectedIndex()== 3) {	
@@ -1171,7 +1171,7 @@ this.setVisible(true);
 			        detailedSummaryTextArea.append("Income Type: " + intype+ "\n");
 			        detailedSummaryTextArea.append("Income Amount: " + inamount + "\n");
 			       
-			        detailedSummaryTextArea.append("-------------------------------------------------\n");
+			        detailedSummaryTextArea.append("----------------------------------------------------------------------------\n");
 			        }
 			    }
 				    
@@ -1188,7 +1188,7 @@ this.setVisible(true);
 				        detailedSummaryTextArea.append("Amount: " + amount + "\n");
 				        detailedSummaryTextArea.append("Frequency: " + frequency + "\n"); 
 				        
-				        detailedSummaryTextArea.append("-------------------------------------------------\n");
+				        detailedSummaryTextArea.append("----------------------------------------------------------------------------\n");
 				    }
 			    
 			} catch (IOException e1) {
@@ -1308,7 +1308,8 @@ this.setVisible(true);
 		}
 	}
 	
-
+// need to create exceptions that catch any inproper input into program
+//	issue with sorting when importing files 
 	
    if(e.getSource()==importExpenseButton) {
 		
@@ -1343,7 +1344,7 @@ this.setVisible(true);
 			JOptionPane.showMessageDialog(null, "Income added! Look in Console for details!", "Success", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
-
+//sorter doesn't completely work 
 	if(e.getSource()==exportIncomeReportButton) { 
 		
         String fileName = "incomeoutput.txt";
