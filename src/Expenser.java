@@ -60,7 +60,19 @@ public interface Expenser {
 		
 	}
 	//As  a user I would like to view a detailed report of income of a certain type, and summary information for income
-	public void PrintIncomereportbyTpe();
+	
+	public static List<Map<String, Object>> PrintIncomereportbyType(String intype) {
+		 List<Map<String, Object>> filteredIncomes = new ArrayList<>();
+		    
+		    for (Map<String, Object> incomeDetailsMap : incomeAmount) {
+		        String category = (String) incomeDetailsMap.get("Type");
+		        
+		        if (category.equals(intype)) {
+		            filteredIncomes.add(incomeDetailsMap);
+		        }
+		    }
+		    return filteredIncomes;
+	}
 	//As  a user I would like to view a detailed report of expense of a certain type , and summary information for expenses
 	public static List<Map<String, Object>> PrintExpensebyType(String type) {
 		 List<Map<String, Object>> filteredExpenses = new ArrayList<>();
